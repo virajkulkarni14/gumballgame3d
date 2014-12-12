@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nifty xmlns="http://nifty-gui.sourceforge.net/nifty-1.3.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nifty-gui.sourceforge.net/nifty-1.3.xsd http://nifty-gui.sourceforge.net/nifty-1.3.xsd">
+  <!-- +++++++++++++++++++++++++++++++++++++++ -->
+  <!-- start screen -->
+  <!-- +++++++++++++++++++++++++++++++++++++++ -->
+      <useStyles filename= "nifty-default-styles.xml"/> 
+    <useControls filename= "nifty-default-controls.xml"/> 
+  <screen id="credits" controller="mygame.Credits">
+    <layer id="GLayer1" childLayout="absolute" backgroundImage="Interface/Credits.PNG">
+    <control name="button" id="GButton5" childLayout="center" x="600" y="612" label="Continue" height="52px">
+        <interact onClick="continuetogame()"></interact>
+    </control>
+        </layer>
+ 
+  </screen>
+</nifty>

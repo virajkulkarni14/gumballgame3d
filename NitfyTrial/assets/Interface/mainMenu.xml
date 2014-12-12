@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nifty xmlns="http://nifty-gui.sourceforge.net/nifty-1.3.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nifty-gui.sourceforge.net/nifty-1.3.xsd http://nifty-gui.sourceforge.net/nifty-1.3.xsd">
+    <!-- +++++++++++++++++++++++++++++++++++++++ -->
+    <!-- start screen -->
+    <!-- +++++++++++++++++++++++++++++++++++++++ -->
+    <useStyles filename= "nifty-default-styles.xml"/> 
+    <useControls filename= "nifty-default-controls.xml"/>  
+    <screen id="start" controller="mygame.MainMenu">
+        <layer id="GLayer7" childLayout="absolute" backgroundImage="Interface/mainMenu.PNG">
+           <panel id="GPanel2" childLayout="absolute" width="546px" x="216" y="473" height="100%">
+              <control name="button" id="GButton2" visibleToMouse="true" backgroundColor="#0000ffff" childLayout="center" label="Start New Game" width="154px" height="60px" x="250" y="75">  
+                  <interact onClick="startGame()"></interact>
+              </control>
+              <control name="button" id="GButton3" visibleToMouse="true" backgroundColor="#0000ffff" childLayout="center" label="Exit" width="154px" height="60px" x="450" y="75"> 
+              <interact onClick="exitGame()"></interact>
+              v</control>
+            </panel>
+ 
+        </layer>
+    </screen>
+</nifty>
